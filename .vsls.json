@@ -1,0 +1,5 @@
+{
+"$schema": "https://aka.ms/liveshare.vsls.json",
+"allowGuestDebugControl": true,
+"allowGuestTaskControl": true
+}
