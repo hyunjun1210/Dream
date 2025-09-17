@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const box = document.getElementById('container');
+    const page =  document.getElementById("page");
     const fullpage = box.querySelectorAll(".fullpage");
     const length = fullpage.length;
     let count = 0;
@@ -17,11 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             count--;
         }
+        page.textContent = `page ${count + 1}`
         scroll(count);
 
         setTimeout(() => {
             isScrolling = false;
-        }, 1000);
+        }, 800);
     });
 
     function scroll(currentCount)
