@@ -3,35 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rabbit Project</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p id="page">page 1</p>
+    <nav id="page-indicator">
+        <ul></ul>
+    </nav>
+
+    <aside class="toc-container collapsed" id="toc-container">
+        <button id="toc-toggle">목차</button>
+        <div class="toc-content">
+            <h2>목차</h2>
+            <ol class="toc-list">
+                <li><a href="#box3">팀원 소개</a></li>
+                <li><a href="#box4">창업 계획 및 창업 아이템</a></li>
+                <li><a href="#box5">재무 및 자금 계획</a></li>
+                <li><a href="#box6">미래에 대한 계획</a></li>
+            </ol>
+        </div>
+    </aside>
+
     <div id="container">
         <section id="box1" class="fullpage">
             <div class="center">
-                <h1>Rabbit</h1>
-                <p>Dream Project And Business plan...</p>
+                <div class="intro-text">
+                    <h1>Rabbit</h1>
+                    <p>Dream Project And Business plan...</p>
+                </div>
             </div>
+            <div class="scroll-down"></div>
         </section>
+        
         <section id="box2" class="fullpage list">
             <h2>목차</h2>
-            <hr>
-            <ol>
-                <li><p>팀원 소개</p></li>
-                <li><p>창업 계획 및 창업 아이템</p></li>
-                <li><p>재무 및 자금 계획</p></li>
-                <li><p>미래 결과에 대한 예상</p></li>
-            </ol>
+            <ul>
+                <li><p data-index="2">01. 팀원 소개</p></li>
+                <li><p data-index="3">02. 창업 계획 및 창업 아이템</p></li>
+                <li><p data-index="4">03. 재무 및 자금 계획</p></li>
+                <li><p data-index="5">04. 미래에 대한 계획</p></li>
+            </ul>
         </section>
-        <section id="box3" class="fullpage">
-            
+        
+        <section id="box3" class="fullpage content-page">
+            <div class="content-wrapper">
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <img class="team-photo-placeholder" src="image/Chibiusa.jpg" alt="Team member photo">
+                        <h3>차현준</h3>
+                        <h4>CEO & Lead Developer</h4>
+                        <p>프로젝트 총괄 및 핵심 기능 개발을 담당합니다.</p>
+                    </div>
+                    <div class="team-card">
+                        <img class="team-photo-placeholder" src="https://i.namu.wiki/i/dZhHh1uveQSHnXGLljyPKSxUObnbpEv4dlkGdGjtmVR8t6YZ6PGcxk28chnxrPhiD_obFhUd-dm_nvfDvn0WibRMZW4QgtD_FywRbLRXohv4OkjVSqCjzyhr5QWg-IG4ZHDMqk38jcyEyyGfFfxgRQ.webp" alt="Team member photo">
+                        <h3>송준모</h3>
+                        <h4>Deputy team leader Developer</h4>
+                        <p>팀원들을 관리하고, UI/UX, 시스템을 개발합니다.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="box4" class="fullpage">
-            
+
+        <section id="box4" class="fullpage content-page">
+            <div class="content-wrapper">
+                <div class="item-intro">
+                    <h2 class="item-title">Dream</h2>
+                    <p class="item-tagline">디자인부터 개발까지, 당신의 아이디어를 현실로 만드는 가장 빠른 방법.</p>
+                </div>
+                
+                <div class="dream-details-grid">
+                    <div class="detail-card">
+                        <h3>What is Dream?</h3>
+                        <p>GUI 기반으로 UI/UX를 손쉽게 디자인하고, 코드와 노드를 사용해 직관적으로 개발할 수 있는 올인원(All-in-One) 웹 개발 툴입니다.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Why Dream?</h3>
+                        <p>복잡하고 시간 소모가 큰 기존 웹 개발 방식의 한계를 극복합니다. 개발 속도를 획기적으로 단축시켜 누구나 아이디어를 빠르게 현실로 만들 수 있도록 돕습니다.</p>
+                    </div>
+                    <div class="detail-card full-span">
+                        <h3>Competitive Edge</h3>
+                        <p><strong>Figma(디자인), WebStorm(코드), Unity(노드)</strong>의 핵심 장점을 하나로 통합했습니다. 여러 툴을 배울 필요 없는 혁신적인 개발 환경을 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="box5" class="fullpage content-page">
+            <div class="content-wrapper">
+                <h2>Financial & Funding Plan</h2>
+                <div class="finance-grid">
+                    <div class="finance-card">
+                        <div class="icon-placeholder">💰</div>
+                        <h3>Revenue Model</h3>
+                        <p>구독형 SaaS 모델을 채택합니다. 개인(무료), Pro(유료), 교육용(무료) 플랜을 제공하여 수익을 창출합니다.</p>
+                    </div>
+                    <div class="finance-card">
+                        <div class="icon-placeholder">📈</div>
+                        <h3>Market Analysis</h3>
+                        <p>빠르게 성장하는 노코드/로우코드 시장의 잠재력을 활용합니다. 웹 개발 시장에 새로운 패러다임을 제시하여 독점적 위치를 확보할 계획입니다.</p>
+                    </div>
+                    <div class="finance-card">
+                        <div class="icon-placeholder">📢</div>
+                        <h3>Funding & Marketing</h3>
+                        <p>크라우드 펀딩으로 초기 자금을 조달하고, Reddit 등 글로벌 커뮤니티에 개발 일지를 공유하며 초기 사용자층을 확보할 것입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="box6" class="fullpage content-page">
+            <div class="content-wrapper">
+                <h2>Our Roadmap</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2 Years</div>
+                        <div class="timeline-content">
+                            <h3>Beta Version Launch</h3>
+                            <p>베타 버전을 출시하여 초기 사용자 피드백을 기반으로 서비스를 고도화하고 안정성을 확보합니다.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">3-5 Years</div>
+                        <div class="timeline-content">
+                            <h3>Strategic Partnerships</h3>
+                            <p>교육 기관 및 스타트업과 제휴를 맺어 'Dream'을 실무 표준 툴로 자리매김합니다.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">5+ Years</div>
+                        <div class="timeline-content">
+                            <h3>Global Expansion</h3>
+                            <p>글로벌 SaaS 플랫폼으로 성장하여 전 세계 개발자의 개발 생태계를 혁신합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="box7" class="fullpage">
+            <div class="center">
+                <div class="thank-you-content">
+                    <h2>감사합니다</h2>
+                    <p>여러분의 꿈을 현실로 만드는 여정에 함께하겠습니다.</p>
+                    <span>- Rabbit Project -</span>
+                </div>
+            </div>
         </section>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
